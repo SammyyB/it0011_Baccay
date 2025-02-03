@@ -3,8 +3,7 @@ lname = input("Enter your last name: ")
 age = input("Enter your age: ")
 
 fullName = fname + " " + lname
-x = slice(3)
-slicedName = (fullName[x])
+slicedName = (fullName[:3])
 
 greetings = f"Hello {slicedName}! Welcome. You are {age} years old "
 print("\nFull Name: ", fullName)
