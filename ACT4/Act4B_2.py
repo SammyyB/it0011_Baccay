@@ -1,8 +1,8 @@
 dollar_amount = float(input("How much dollar do you have? "))
 
 currency_data = {}
-with open("ACT4\currency.csv", "r", encoding="ISO-8859-1") as file:
-    lines = file.readlines()[1:]  # Skip header
+with open("ACT4\currency.csv", "r") as file:
+    lines = file.readlines()[1:]  
     for line in lines:
         parts = line.strip().split(',')
         if len(parts) == 3: 
