@@ -32,10 +32,11 @@ while True:
     
     if choice in ["D", "E", "R", "F"]:
         try:
-            num1 = int(input("Enter first number: "))
+            print("=============================================")
+            num1 = int(input("\nEnter first number: "))
             num2 = int(input("Enter second number: "))
         except ValueError:
-            print("Invalid input. Please enter integers.")
+            print("\nInvalid input. Please enter integers.")
             continue
 
         if choice == "D":
@@ -54,4 +55,4 @@ while True:
         print("\nExiting program.")
         break
     else:
-        print("Invalid choice, please try again.")
+        print("\nInvalid choice, please try again.")
